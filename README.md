@@ -45,6 +45,10 @@ details later on:  :+1:
 ```javascript
 .hline
 ```
+### Cut paper
+```javascript
+>>>
+```
 #### Print variables or expressions
 Print the content of variables or the result of evaluating an expression.
 ```javascript
