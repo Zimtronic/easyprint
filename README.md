@@ -1,4 +1,4 @@
-# POSJS Printer Template
+# easyprint template engine
 
 easyprint is a template engine whose goal is to reduce the work to 
 use the Ticket Printer in [posjs](https://github.com/Zimtronic/posjs) and 
