@@ -1,7 +1,7 @@
 # easyprint template engine
 
 easyprint is a template engine whose goal is to reduce the work to 
-use the Ticket Printer in [posjs](https://github.com/Zimtronic/posjs) and 
+use the ESCPOS printer in [posjs](https://github.com/Zimtronic/posjs) and 
 [posjs2](https://github.com/Zimtronic/posjs2) projects.
 
 A short list of the features:
