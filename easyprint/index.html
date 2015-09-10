@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="easyprint.js"></script>
+        <script>
+        
+        var title = "TEST";
+        var products = ["milk", "banana", "beans"];
+        var headerMap = [["Products", "Price"]];
+        var pricesMap = [["milk", 10.50],["banana", 5.40], ["beans", 20.60]];
+        var resultMap = [["Subtotal", 10.50],["Tax 10%", 5.40], ["Total", 20.60], ["Cash tend", 8.5], ["Cash due", 10.20]];
+        var code = "ZIMTRONIC";
+        var imagePath = ":/zimtronic-pos.png";
+        var storeNumber = "0123456";
+        var storeCity = "MIAMI BEACH, FL."
+        
+        var source = "{{image:imagePath}} \
+                      .style1 Template {{var:title}} .newline .newline \
+                      .style2 STORE # {{var:storeNumber}} .newline \
+                      {{var:storeCity}} .newline \
+                      .style5 \
+                      {{map:headerMap}} \
+                      .hline \
+                      {{map:pricesMap}} \
+                      .hline \
+                      {{map:resultMap}} \
+                      {{barcode:code}} \
+                      {{qrcode:code}} \
+                      .style3 Thanks >>>";
+        
+        function test(){
+            
+            var template = new EasyPrintTemplate(source);
+            template.render();
+        }
+
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            <input type="button" onclick="test()"value="Render">
+
+        </form>
+    </body>
+</html>
