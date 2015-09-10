@@ -1,6 +1,6 @@
 # POSJS Printer Template
 
-POSJS Printer Template is a template language whose goal is to reduce the work to 
+easyprint is a template engine whose goal is to reduce the work to 
 use the Ticket Printer in [posjs](https://github.com/Zimtronic/posjs) and 
 [posjs2](https://github.com/Zimtronic/posjs2) projects.
 
@@ -60,7 +60,7 @@ The correspondent *id* must be an javascript variable identifier as follow:
 * barcode -> js var id of type string with an ascii code
 * qrcode -> js var id of type string with an ascii code
 
-### Using POSJS Template
+### Using easyprint 
 ```javascript
 <html>
     <head>
